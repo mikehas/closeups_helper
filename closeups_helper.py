@@ -2,11 +2,11 @@
 import sys
 from sets import Set
 
-# Given a set of letters and a word length, display all possible words of length n you can make with the original set of letters.
+# Given a set of letters and a word length n, display all possible words of length n you can make with the original set of letters.
 
 # Input
-input = 'blabbeougotoum'
-length = 9
+input = 'blabbeougotoum' # set of letters
+length = 9               # n
 
 # HELPERS
 
@@ -43,7 +43,7 @@ counts = getCounts(input)
   
 results2 = []
 
-# Remove words from 1st pass that have extra letters
+# Remove words from 1st pass that have incorrect number of letters
 for item in results:
   itemcounts = getCounts(item)
   candidate = True
